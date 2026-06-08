@@ -11,6 +11,7 @@ app = Client(
 import handlers.start
 import handlers.verify
 import handlers.search
+import handlers.admin
 
 print("SAVI HUB Started")
 
