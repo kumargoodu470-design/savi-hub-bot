@@ -1,5 +1,4 @@
 from pyrogram import Client
-
 from config import *
 
 app = Client(
@@ -9,8 +8,9 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-from handlers.start import *
-from handlers.verify import *
+import handlers.start
+import handlers.verify
+
 print("SAVI HUB Started")
 
 app.run()
