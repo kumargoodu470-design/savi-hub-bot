@@ -26,3 +26,13 @@ async def get_files(title):
             "title": title.lower()
         }
     ).to_list(length=50)
+async def add_file(title, quality, size, file_id):
+
+    await files_collection.insert_one(
+        {
+            "title": title.lower(),
+            "quality": quality,
+            "size": size,
+            "file_id": file_id
+        }
+    )
