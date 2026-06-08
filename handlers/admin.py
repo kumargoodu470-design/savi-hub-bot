@@ -6,8 +6,7 @@ from bot import app
 pending_uploads = {}
 
 
-ADMIN_ID = 123456789  # apna Telegram user id daalna
-
+ADMIN_ID = 6024953191  
 
 @app.on_message(filters.video & filters.user(ADMIN_ID))
 async def receive_video(client, message):
