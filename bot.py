@@ -10,7 +10,7 @@ app = Client(
 )
 
 from handlers.start import *
-
+from handlers.verify import *
 print("SAVI HUB Started")
 
 app.run()
